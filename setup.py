@@ -14,6 +14,7 @@ setup(
     author='codeif',
     author_email='me@codeif.com',
     url='https://github.com/codeif/crimg',
+    license='MIT',
     entry_points={
         'console_scripts': [
             'crimg = crimg.bin:main',
