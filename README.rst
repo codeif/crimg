@@ -1,10 +1,10 @@
 crimg
 =====
 
-
 crimg uses `Pillow <http://pillow.readthedocs.io/en/latest/>`_
 to crop and resize an image as appropriate for web
-presentation. crimg is a convenience package that allows image
+presentation.
+It is a convenience package that allows image
 resizing without aspect ratio distortion.
 
 API
@@ -19,7 +19,6 @@ The function takes three arguments:
 
 See ``crimg.crop_resize.__doc__`` for the function
 documentation.  ``crop_resize`` returns the cropped and resized PIL image.
-
 
 Command Line
 ------------
