@@ -43,12 +43,25 @@ def crop_by_aspect_ratio(image, aspect_ratio):
 
 
 def crop_resize(image, size, exact_size=False):
-    """
+    """Crop out the proportional middle of the image and set to the desired size.
 
     :param image: a PIL image object
     :param size: a 2-tuple of (width,height);  at least one must be specified
     :param exact_size: whether to scale up for smaller images.
         Defaults to ``False``.
+
+        If the image is bigger than the sizes passed,
+        this works as expected.
+
+        If the image is smaller than the sizes passed,
+        then behavior is dictated by the ``exact_size`` flag.
+
+        If the ``exact_size`` flag is false,
+        the image will be returned unmodified.
+
+        If the ``exact_size`` flag is true,
+        the image will be scaled up to the required size.
+
     :return: An :py:class:`~PIL.Image.Image` object.
     """
     target_size = get_target_size(image.size, size, exact_size)

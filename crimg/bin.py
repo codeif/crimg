@@ -6,7 +6,8 @@ from PIL import Image
 
 from .api import crop_resize
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(
+    description='crop and resize an image without aspect ratio distortion.')
 parser.add_argument('image')
 parser.add_argument('-w', '-W', '--width', metavar='<width>', type=int,
                     help='desired width of image in pixels')
