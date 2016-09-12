@@ -8,7 +8,7 @@ with open('README.rst') as f:
 
 setup(
     name='crimg',
-    version='0.0.1',
+    version='0.0.2',
     description='Crop and resize an image without aspect ratio distortion.',
     long_description=readme,
     author='codeif',
