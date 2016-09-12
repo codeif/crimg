@@ -33,7 +33,6 @@ def main():
     else:
         f = BytesIO()
         new_image.save(f, image.format)
-        sys.stdout.buffer.write(f.getvalue())
         try:
             stdout = sys.stdout.buffer
         except AttributeError:
