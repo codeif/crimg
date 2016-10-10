@@ -15,7 +15,7 @@ parser.add_argument('-H', '--height', metavar='<height>', type=int,
                     help='desired height of image in pixels')
 parser.add_argument('-f', '--force', action='store_true',
                     help='whether to scale up for smaller images')
-parser.add_argument('-d', '--display',
+parser.add_argument('-d', '--display', action='store_true', default=False,
                     help='display the new image (don\'t write to file)')
 parser.add_argument('-o', '--output', metavar='<file>',
                     help='Write output to <file> instead of stdout.')
